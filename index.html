@@ -1,0 +1,33 @@
+cat << 'EOF' > index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Pages Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans antialiased">
+    <div class="min-h-screen flex items-center justify-center p-4">
+        <div class="max-w-xl w-full bg-white rounded-lg shadow-xl p-8 text-center">
+            <h1 class="text-4xl font-bold text-indigo-600 mb-4">Welcome to My Site!</h1>
+            <p class="text-lg text-gray-700 mb-6">This is the main homepage for my GitHub Pages project.</p>
+            <p class="text-lg text-gray-700 mb-8">
+                You can <a href="./nonexistent-page.html" class="text-indigo-600 hover:text-indigo-800 font-medium underline">click this link</a> to test the custom 404 error page.
+            </p>
+            <footer class="border-t border-gray-200 pt-6 mt-8">
+                <p class="text-sm text-gray-500">
+                    Contact:
+                    <!--email_off-->
+                    <span class="font-mono text-gray-600">24f2007890@ds.study.iitm.ac.in</span>
+                    <!--/email_off-->
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+EOF
