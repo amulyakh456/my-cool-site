@@ -1,0 +1,40 @@
+cat << 'EOF' > 404.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans antialiased">
+    <div class="min-h-screen flex items-center justify-center p-4 text-center">
+        <div class="max-w-xl w-full bg-white rounded-lg shadow-xl p-8">
+            <div class="mb-6">
+                <span class="text-8xl font-bold text-indigo-600">4</span>
+                <span class="text-8xl font-bold text-indigo-600 animate-bounce inline-block">0</span>
+                <span class="text-8xl font-bold text-indigo-600">4</span>
+            </div>
+            <h1 class="text-3xl font-semibold text-gray-800 mb-3">Oops! You've taken a wrong turn.</h1>
+            <p class="text-lg text-gray-700 mb-8">
+                The page you're looking for seems to have gotten lost in the digital wilderness. Don't worry, we can get you back on track.
+            </p>
+            <a href="/" class="inline-block bg-indigo-600 text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-300">
+                &larr; Go Back Home
+            </a>
+            <footer class="border-t border-gray-200 pt-6 mt-10">
+                <p class="text-sm text-gray-500">
+                    If you believe this is an error, please contact:
+                    <!--email_off-->
+                    <span class="block mt-1 font-mono text-gray-600">24f2007890@ds.study.iitm.ac.in</span>
+                    <!--/email_off-->
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+EOF
